@@ -1,6 +1,6 @@
 {
   "country": "India",
-  "total_schemes_unique": 89,
+  "total_schemes_unique": 102,
   "last_updated_year": 2026,
   "schemes": [
     {
@@ -12,12 +12,16 @@
       "income_limit": "No limit",
       "age_limit": "10+",
       "benefits": "Zero balance account, RuPay debit card, insurance cover",
-      "required_documents": ["Aadhaar Card", "Address Proof"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Address Proof"
+      ],
       "application_process": "Open account at bank branch or CSP",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Unbanked population"
+      "target_beneficiaries": "Unbanked population",
+      "official_link": "https://pmjdy.gov.in/"
     },
     {
       "scheme_id": 2,
@@ -28,12 +32,17 @@
       "income_limit": "₹3–18 lakh per year",
       "age_limit": "18+",
       "benefits": "Interest subsidy on housing loans",
-      "required_documents": ["Aadhaar Card", "Income Certificate", "Property Proof"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Income Certificate",
+        "Property Proof"
+      ],
       "application_process": "Apply through PMAY Urban portal",
       "implementing_agency": "Ministry of Housing and Urban Affairs",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Urban poor and middle class"
+      "target_beneficiaries": "Urban poor and middle class",
+      "official_link": "https://pmaymis.gov.in/"
     },
     {
       "scheme_id": 3,
@@ -44,12 +53,17 @@
       "income_limit": "BPL / SECC-based",
       "age_limit": "18+",
       "benefits": "Financial assistance for house construction",
-      "required_documents": ["Aadhaar Card", "Job Card", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Job Card",
+        "Bank Account"
+      ],
       "application_process": "Selection through Gram Panchayat",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 2016,
-      "target_beneficiaries": "Rural poor"
+      "target_beneficiaries": "Rural poor",
+      "official_link": "https://pmayg.nic.in/"
     },
     {
       "scheme_id": 4,
@@ -60,12 +74,16 @@
       "income_limit": "As per SECC data",
       "age_limit": "No limit",
       "benefits": "₹5 lakh health insurance per family per year",
-      "required_documents": ["Aadhaar Card", "Ration Card"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Ration Card"
+      ],
       "application_process": "Enrollment at empanelled hospitals",
       "implementing_agency": "Ministry of Health and Family Welfare",
       "government_level": "Central",
       "launch_year": 2018,
-      "target_beneficiaries": "Economically weaker families"
+      "target_beneficiaries": "Economically weaker families",
+      "official_link": "https://pmjay.gov.in/"
     },
     {
       "scheme_id": 5,
@@ -76,12 +94,17 @@
       "income_limit": "Excludes institutional landholders",
       "age_limit": "18+",
       "benefits": "₹6,000 per year",
-      "required_documents": ["Aadhaar Card", "Land Records", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account"
+      ],
       "application_process": "Apply via PM-KISAN portal",
       "implementing_agency": "Ministry of Agriculture",
       "government_level": "Central",
       "launch_year": 2019,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://pmkisan.gov.in/"
     },
     {
       "scheme_id": 6,
@@ -92,12 +115,17 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "100 days guaranteed wage employment",
-      "required_documents": ["Job Card", "Aadhaar Card", "Bank Account"],
+      "required_documents": [
+        "Job Card",
+        "Aadhaar Card",
+        "Bank Account"
+      ],
       "application_process": "Register at Gram Panchayat",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 2005,
-      "target_beneficiaries": "Rural households"
+      "target_beneficiaries": "Rural households",
+      "official_link": "https://nrega.nic.in/"
     },
     {
       "scheme_id": 7,
@@ -108,12 +136,17 @@
       "income_limit": "BPL households",
       "age_limit": "18+",
       "benefits": "Free LPG gas connection",
-      "required_documents": ["Aadhaar Card", "BPL Certificate", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "BPL Certificate",
+        "Bank Account"
+      ],
       "application_process": "Apply at LPG distributor",
       "implementing_agency": "Ministry of Petroleum and Natural Gas",
       "government_level": "Central",
       "launch_year": 2016,
-      "target_beneficiaries": "Women from poor households"
+      "target_beneficiaries": "Women from poor households",
+      "official_link": "https://www.pmujjwalayojana.com/"
     },
     {
       "scheme_id": 8,
@@ -124,12 +157,16 @@
       "income_limit": "No limit",
       "age_limit": "0–10",
       "benefits": "High-interest savings scheme",
-      "required_documents": ["Birth Certificate", "Guardian Aadhaar"],
+      "required_documents": [
+        "Birth Certificate",
+        "Guardian Aadhaar"
+      ],
       "application_process": "Open account at bank or post office",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Girl children"
+      "target_beneficiaries": "Girl children",
+      "official_link": "https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=69"
     },
     {
       "scheme_id": 9,
@@ -140,12 +177,16 @@
       "income_limit": "No limit",
       "age_limit": "18–40",
       "benefits": "Guaranteed pension after 60",
-      "required_documents": ["Aadhaar Card", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Bank Account"
+      ],
       "application_process": "Apply through banks",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Unorganized workers"
+      "target_beneficiaries": "Unorganized workers",
+      "official_link": "https://npscra.nsdl.co.in/scheme-details.php"
     },
     {
       "scheme_id": 10,
@@ -156,12 +197,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Collateral-free loans up to ₹10 lakh",
-      "required_documents": ["Aadhaar Card", "Business Proof"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Business Proof"
+      ],
       "application_process": "Apply through banks or NBFCs",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Micro entrepreneurs"
+      "target_beneficiaries": "Micro entrepreneurs",
+      "official_link": "https://www.mudra.org.in/"
     },
     {
       "scheme_id": 11,
@@ -172,12 +217,17 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Insurance against crop loss",
-      "required_documents": ["Aadhaar Card", "Land Records", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account"
+      ],
       "application_process": "Apply via banks or CSCs",
       "implementing_agency": "Ministry of Agriculture",
       "government_level": "Central",
       "launch_year": 2016,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://pmfby.gov.in/"
     },
     {
       "scheme_id": 12,
@@ -188,12 +238,15 @@
       "income_limit": "No limit",
       "age_limit": "15–45",
       "benefits": "Free skill training",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Register on Skill India portal",
       "implementing_agency": "Ministry of Skill Development",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Youth"
+      "target_beneficiaries": "Youth",
+      "official_link": "https://www.msde.gov.in/en/schemes-initiatives/skill-india"
     },
     {
       "scheme_id": 13,
@@ -204,12 +257,15 @@
       "income_limit": "No limit",
       "age_limit": "0–18",
       "benefits": "Awareness and education support",
-      "required_documents": ["Birth Certificate"],
+      "required_documents": [
+        "Birth Certificate"
+      ],
       "application_process": "Implemented through districts",
       "implementing_agency": "Ministry of Women and Child Development",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Girl children"
+      "target_beneficiaries": "Girl children",
+      "official_link": "https://wcd.nic.in/bbbp-schemes"
     },
     {
       "scheme_id": 14,
@@ -220,12 +276,16 @@
       "income_limit": "BPL households",
       "age_limit": "60+",
       "benefits": "Monthly pension",
-      "required_documents": ["Aadhaar Card", "BPL Certificate"],
+      "required_documents": [
+        "Aadhaar Card",
+        "BPL Certificate"
+      ],
       "application_process": "Apply via local welfare office",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 1995,
-      "target_beneficiaries": "Vulnerable citizens"
+      "target_beneficiaries": "Vulnerable citizens",
+      "official_link": "https://nsap.nic.in/"
     },
     {
       "scheme_id": 15,
@@ -236,12 +296,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Online access to government services",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Access via online portals",
       "implementing_agency": "Ministry of Electronics and IT",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Citizens"
+      "target_beneficiaries": "Citizens",
+      "official_link": "https://www.digitalindia.gov.in/"
     },
     {
       "scheme_id": 16,
@@ -252,12 +315,16 @@
       "income_limit": "₹1 lakh per year",
       "age_limit": "60+",
       "benefits": "Monthly pension",
-      "required_documents": ["Aadhaar Card", "Residence Proof"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Residence Proof"
+      ],
       "application_process": "Apply via Delhi e-District portal",
       "implementing_agency": "Government of Delhi",
       "government_level": "State",
       "launch_year": 2007,
-      "target_beneficiaries": "Elderly citizens"
+      "target_beneficiaries": "Elderly citizens",
+      "official_link": "https://nsap.nic.in/old-age-pension.html"
     },
     {
       "scheme_id": 17,
@@ -268,12 +335,16 @@
       "income_limit": "No limit",
       "age_limit": "15+",
       "benefits": "Free laptop",
-      "required_documents": ["School ID", "Aadhaar Card"],
+      "required_documents": [
+        "School ID",
+        "Aadhaar Card"
+      ],
       "application_process": "Distributed through institutions",
       "implementing_agency": "Tamil Nadu Government",
       "government_level": "State",
       "launch_year": 2011,
-      "target_beneficiaries": "Students"
+      "target_beneficiaries": "Students",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 18,
@@ -284,12 +355,16 @@
       "income_limit": "As per state norms",
       "age_limit": "18+",
       "benefits": "Income and livelihood support",
-      "required_documents": ["Aadhaar Card", "Land Records"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records"
+      ],
       "application_process": "Apply via Odisha state portal",
       "implementing_agency": "Government of Odisha",
       "government_level": "State",
       "launch_year": 2018,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 19,
@@ -300,12 +375,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Per-acre investment support",
-      "required_documents": ["Aadhaar Card", "Land Records"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records"
+      ],
       "application_process": "Automatic enrollment",
       "implementing_agency": "Government of Telangana",
       "government_level": "State",
       "launch_year": 2018,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 20,
@@ -316,12 +395,16 @@
       "income_limit": "No limit",
       "age_limit": "0–18",
       "benefits": "Financial support for education",
-      "required_documents": ["Birth Certificate", "Aadhaar Card"],
+      "required_documents": [
+        "Birth Certificate",
+        "Aadhaar Card"
+      ],
       "application_process": "Apply via Bihar portal",
       "implementing_agency": "Government of Bihar",
       "government_level": "State",
       "launch_year": 2018,
-      "target_beneficiaries": "Girl children"
+      "target_beneficiaries": "Girl children",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 21,
@@ -332,12 +415,16 @@
       "income_limit": "₹1 lakh per year",
       "age_limit": "0–18",
       "benefits": "Financial assistance for education",
-      "required_documents": ["Birth Certificate", "Income Certificate"],
+      "required_documents": [
+        "Birth Certificate",
+        "Income Certificate"
+      ],
       "application_process": "Apply via Delhi portal",
       "implementing_agency": "Government of Delhi",
       "government_level": "State",
       "launch_year": 2008,
-      "target_beneficiaries": "Girl children"
+      "target_beneficiaries": "Girl children",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 22,
@@ -348,12 +435,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Subsidized meals",
-      "required_documents": ["None"],
+      "required_documents": [
+        "None"
+      ],
       "application_process": "Walk-in service",
       "implementing_agency": "Tamil Nadu Government",
       "government_level": "State",
       "launch_year": 2013,
-      "target_beneficiaries": "Urban poor"
+      "target_beneficiaries": "Urban poor",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 23,
@@ -364,12 +454,16 @@
       "income_limit": "₹72,000 per year",
       "age_limit": "No limit",
       "benefits": "Cashless medical treatment",
-      "required_documents": ["Aadhaar Card", "Income Proof"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Income Proof"
+      ],
       "application_process": "Apply at empanelled hospitals",
       "implementing_agency": "Tamil Nadu Government",
       "government_level": "State",
       "launch_year": 2009,
-      "target_beneficiaries": "Low-income families"
+      "target_beneficiaries": "Low-income families",
+      "official_link": "https://www.nhp.gov.in/"
     },
     {
       "scheme_id": 24,
@@ -380,12 +474,16 @@
       "income_limit": "₹1.2 lakh per year",
       "age_limit": "13–18",
       "benefits": "Annual scholarship and one-time grant",
-      "required_documents": ["School Certificate", "Income Proof"],
+      "required_documents": [
+        "School Certificate",
+        "Income Proof"
+      ],
       "application_process": "Apply through school",
       "implementing_agency": "Government of West Bengal",
       "government_level": "State",
       "launch_year": 2013,
-      "target_beneficiaries": "Girl students"
+      "target_beneficiaries": "Girl students",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 25,
@@ -396,12 +494,15 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Expanded LPG access",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Apply via distributors",
       "implementing_agency": "Ministry of Petroleum",
       "government_level": "Central",
       "launch_year": 2009,
-      "target_beneficiaries": "Rural households"
+      "target_beneficiaries": "Rural households",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 26,
@@ -412,12 +513,16 @@
       "income_limit": "As per state ration criteria",
       "age_limit": "No limit",
       "benefits": "Subsidized food grains",
-      "required_documents": ["Ration Card", "Aadhaar Card"],
+      "required_documents": [
+        "Ration Card",
+        "Aadhaar Card"
+      ],
       "application_process": "Apply through state food department",
       "implementing_agency": "Ministry of Consumer Affairs",
       "government_level": "Central",
       "launch_year": 2013,
-      "target_beneficiaries": "Low-income households"
+      "target_beneficiaries": "Low-income households",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 27,
@@ -428,12 +533,15 @@
       "income_limit": "No limit",
       "age_limit": "6–14",
       "benefits": "Free nutritious meals",
-      "required_documents": ["School Enrollment"],
+      "required_documents": [
+        "School Enrollment"
+      ],
       "application_process": "Automatic enrollment via school",
       "implementing_agency": "Ministry of Education",
       "government_level": "Central",
       "launch_year": 1995,
-      "target_beneficiaries": "School children"
+      "target_beneficiaries": "School children",
+      "official_link": "https://mdm.nic.in/"
     },
     {
       "scheme_id": 28,
@@ -444,12 +552,16 @@
       "income_limit": "₹1.5 lakh per year",
       "age_limit": "12–18",
       "benefits": "Annual scholarship of ₹12,000",
-      "required_documents": ["Income Certificate", "School Certificate"],
+      "required_documents": [
+        "Income Certificate",
+        "School Certificate"
+      ],
       "application_process": "Apply via NSP portal",
       "implementing_agency": "Ministry of Education",
       "government_level": "Central",
       "launch_year": 2008,
-      "target_beneficiaries": "Students from poor families"
+      "target_beneficiaries": "Students from poor families",
+      "official_link": "https://scholarships.gov.in/"
     },
     {
       "scheme_id": 29,
@@ -460,12 +572,16 @@
       "income_limit": "No limit",
       "age_limit": "14+",
       "benefits": "Stipend support and training",
-      "required_documents": ["Aadhaar Card", "Educational Certificates"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Educational Certificates"
+      ],
       "application_process": "Apply via apprenticeship portal",
       "implementing_agency": "Ministry of Skill Development",
       "government_level": "Central",
       "launch_year": 2016,
-      "target_beneficiaries": "Youth"
+      "target_beneficiaries": "Youth",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 30,
@@ -476,12 +592,16 @@
       "income_limit": "BPL / eligible households",
       "age_limit": "No limit",
       "benefits": "Incentive for toilet construction",
-      "required_documents": ["Aadhaar Card", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Bank Account"
+      ],
       "application_process": "Apply through Gram Panchayat",
       "implementing_agency": "Ministry of Jal Shakti",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Rural households"
+      "target_beneficiaries": "Rural households",
+      "official_link": "https://sbm.gov.in/sbmReport/home.aspx"
     },
     {
       "scheme_id": 31,
@@ -492,12 +612,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Functional household tap connection",
-      "required_documents": ["Residence Proof"],
+      "required_documents": [
+        "Residence Proof"
+      ],
       "application_process": "Implemented via local bodies",
       "implementing_agency": "Ministry of Jal Shakti",
       "government_level": "Central",
       "launch_year": 2019,
-      "target_beneficiaries": "Rural population"
+      "target_beneficiaries": "Rural population",
+      "official_link": "https://jaljeevanmission.gov.in/"
     },
     {
       "scheme_id": 32,
@@ -508,12 +631,16 @@
       "income_limit": "Monthly income below ₹15,000",
       "age_limit": "18–40",
       "benefits": "Monthly pension of ₹3,000 after 60",
-      "required_documents": ["Aadhaar Card", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Bank Account"
+      ],
       "application_process": "Register at CSC",
       "implementing_agency": "Ministry of Labour",
       "government_level": "Central",
       "launch_year": 2019,
-      "target_beneficiaries": "Unorganized workers"
+      "target_beneficiaries": "Unorganized workers",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 33,
@@ -524,12 +651,16 @@
       "income_limit": "BPL households",
       "age_limit": "18+",
       "benefits": "Skill training and credit linkage",
-      "required_documents": ["Aadhaar Card", "SHG Membership"],
+      "required_documents": [
+        "Aadhaar Card",
+        "SHG Membership"
+      ],
       "application_process": "Through SHGs",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 2011,
-      "target_beneficiaries": "Rural women"
+      "target_beneficiaries": "Rural women",
+      "official_link": "https://nrlm.gov.in/"
     },
     {
       "scheme_id": 34,
@@ -540,12 +671,16 @@
       "income_limit": "BPL households",
       "age_limit": "15–35",
       "benefits": "Free residential skill training",
-      "required_documents": ["Aadhaar Card", "Income Certificate"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Income Certificate"
+      ],
       "application_process": "Apply via state agencies",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Rural youth"
+      "target_beneficiaries": "Rural youth",
+      "official_link": "https://ddugky.gov.in/"
     },
     {
       "scheme_id": 35,
@@ -556,12 +691,16 @@
       "income_limit": "BPL households",
       "age_limit": "No limit",
       "benefits": "Health insurance coverage",
-      "required_documents": ["Ration Card", "Aadhaar Card"],
+      "required_documents": [
+        "Ration Card",
+        "Aadhaar Card"
+      ],
       "application_process": "Enrollment through camps",
       "implementing_agency": "Ministry of Labour",
       "government_level": "Central",
       "launch_year": 2008,
-      "target_beneficiaries": "Poor families"
+      "target_beneficiaries": "Poor families",
+      "official_link": "https://www.india.gov.in/spotlight/rashtriya-swasthya-bima-yojana"
     },
     {
       "scheme_id": 36,
@@ -572,12 +711,16 @@
       "income_limit": "₹2.5 lakh per year",
       "age_limit": "23–60",
       "benefits": "Monthly financial assistance",
-      "required_documents": ["Aadhaar Card", "Residence Proof"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Residence Proof"
+      ],
       "application_process": "Apply via state portal",
       "implementing_agency": "Madhya Pradesh Government",
       "government_level": "State",
       "launch_year": 2023,
-      "target_beneficiaries": "Women"
+      "target_beneficiaries": "Women",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 37,
@@ -588,12 +731,16 @@
       "income_limit": "BPL households",
       "age_limit": "18+",
       "benefits": "Financial support for housing",
-      "required_documents": ["Aadhaar Card", "Income Certificate"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Income Certificate"
+      ],
       "application_process": "Apply through Panchayat",
       "implementing_agency": "State Governments",
       "government_level": "State",
       "launch_year": 2016,
-      "target_beneficiaries": "Poor families"
+      "target_beneficiaries": "Poor families",
+      "official_link": "https://mohua.gov.in/"
     },
     {
       "scheme_id": 38,
@@ -604,12 +751,15 @@
       "income_limit": "NFSA based",
       "age_limit": "No limit",
       "benefits": "Free food grains",
-      "required_documents": ["Ration Card"],
+      "required_documents": [
+        "Ration Card"
+      ],
       "application_process": "Automatic distribution",
       "implementing_agency": "Ministry of Consumer Affairs",
       "government_level": "Central",
       "launch_year": 2020,
-      "target_beneficiaries": "Poor households"
+      "target_beneficiaries": "Poor households",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 39,
@@ -620,12 +770,15 @@
       "income_limit": "No limit",
       "age_limit": "14–18",
       "benefits": "Free bicycle",
-      "required_documents": ["School ID"],
+      "required_documents": [
+        "School ID"
+      ],
       "application_process": "Distributed through schools",
       "implementing_agency": "State Governments",
       "government_level": "State",
       "launch_year": 2006,
-      "target_beneficiaries": "Students"
+      "target_beneficiaries": "Students",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 40,
@@ -636,12 +789,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Financial and marketing support",
-      "required_documents": ["Weaver ID", "Aadhaar Card"],
+      "required_documents": [
+        "Weaver ID",
+        "Aadhaar Card"
+      ],
       "application_process": "Apply through handloom offices",
       "implementing_agency": "Ministry of Textiles",
       "government_level": "Central",
       "launch_year": 2007,
-      "target_beneficiaries": "Weavers"
+      "target_beneficiaries": "Weavers",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 41,
@@ -652,12 +809,15 @@
       "income_limit": "Low-income families",
       "age_limit": "6 months–6 years",
       "benefits": "Day care and nutrition",
-      "required_documents": ["Birth Certificate"],
+      "required_documents": [
+        "Birth Certificate"
+      ],
       "application_process": "Apply through local centers",
       "implementing_agency": "Ministry of Women and Child Development",
       "government_level": "Central",
       "launch_year": 2017,
-      "target_beneficiaries": "Children"
+      "target_beneficiaries": "Children",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 42,
@@ -668,12 +828,15 @@
       "income_limit": "No limit",
       "age_limit": "18–35",
       "benefits": "Free training and certification",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Register on PMKVY portal",
       "implementing_agency": "Ministry of Skill Development",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Youth"
+      "target_beneficiaries": "Youth",
+      "official_link": "https://www.pmkvyofficial.org/"
     },
     {
       "scheme_id": 43,
@@ -684,12 +847,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Safe drinking water access",
-      "required_documents": ["None"],
+      "required_documents": [
+        "None"
+      ],
       "application_process": "Implemented through local bodies",
       "implementing_agency": "Ministry of Jal Shakti",
       "government_level": "Central",
       "launch_year": 2009,
-      "target_beneficiaries": "Rural population"
+      "target_beneficiaries": "Rural population",
+      "official_link": "https://jaljeevanmission.gov.in/"
     },
     {
       "scheme_id": 44,
@@ -700,12 +866,16 @@
       "income_limit": "₹2 lakh per year",
       "age_limit": "18+",
       "benefits": "One-time marriage assistance",
-      "required_documents": ["Income Certificate", "Marriage Proof"],
+      "required_documents": [
+        "Income Certificate",
+        "Marriage Proof"
+      ],
       "application_process": "Apply via state portal",
       "implementing_agency": "State Governments",
       "government_level": "State",
       "launch_year": 2010,
-      "target_beneficiaries": "Women"
+      "target_beneficiaries": "Women",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 45,
@@ -716,12 +886,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Climate-resilient farming support",
-      "required_documents": ["Aadhaar Card", "Land Records"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records"
+      ],
       "application_process": "Apply through agriculture department",
       "implementing_agency": "Ministry of Agriculture",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://agricoop.nic.in/"
     },
     {
       "scheme_id": 46,
@@ -732,12 +906,16 @@
       "income_limit": "No limit",
       "age_limit": "16–59",
       "benefits": "Social security benefits access",
-      "required_documents": ["Aadhaar Card", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Bank Account"
+      ],
       "application_process": "Register on e-Shram portal",
       "implementing_agency": "Ministry of Labour",
       "government_level": "Central",
       "launch_year": 2021,
-      "target_beneficiaries": "Unorganized workers"
+      "target_beneficiaries": "Unorganized workers",
+      "official_link": "https://eshram.gov.in/"
     },
     {
       "scheme_id": 47,
@@ -748,12 +926,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Affordable AYUSH healthcare",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Access through AYUSH centers",
       "implementing_agency": "Ministry of AYUSH",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Citizens"
+      "target_beneficiaries": "Citizens",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 48,
@@ -764,12 +945,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Support for oilseed cultivation",
-      "required_documents": ["Aadhaar Card", "Land Records"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records"
+      ],
       "application_process": "Apply via agriculture office",
       "implementing_agency": "Ministry of Agriculture",
       "government_level": "Central",
       "launch_year": 2021,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 49,
@@ -780,12 +965,16 @@
       "income_limit": "₹2.5 lakh per year",
       "age_limit": "10+",
       "benefits": "Tuition fee and maintenance allowance",
-      "required_documents": ["Income Certificate", "Caste Certificate"],
+      "required_documents": [
+        "Income Certificate",
+        "Caste Certificate"
+      ],
       "application_process": "Apply via NSP portal",
       "implementing_agency": "Ministry of Education",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Students"
+      "target_beneficiaries": "Students",
+      "official_link": "https://scholarships.gov.in/"
     },
     {
       "scheme_id": 50,
@@ -796,12 +985,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Improved sanitation and river cleanliness",
-      "required_documents": ["None"],
+      "required_documents": [
+        "None"
+      ],
       "application_process": "Implemented through local bodies",
       "implementing_agency": "Ministry of Jal Shakti",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Ganga basin residents"
+      "target_beneficiaries": "Ganga basin residents",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 51,
@@ -812,12 +1004,17 @@
       "income_limit": "No limit",
       "age_limit": "19+",
       "benefits": "Cash incentive of ₹5,000 in installments",
-      "required_documents": ["Aadhaar Card", "MCP Card", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "MCP Card",
+        "Bank Account"
+      ],
       "application_process": "Apply through Anganwadi or health center",
       "implementing_agency": "Ministry of Women and Child Development",
       "government_level": "Central",
       "launch_year": 2017,
-      "target_beneficiaries": "Pregnant women"
+      "target_beneficiaries": "Pregnant women",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 52,
@@ -828,12 +1025,15 @@
       "income_limit": "No limit",
       "age_limit": "0–6",
       "benefits": "Supplementary nutrition, health check-ups",
-      "required_documents": ["Birth Certificate"],
+      "required_documents": [
+        "Birth Certificate"
+      ],
       "application_process": "Enrollment at Anganwadi center",
       "implementing_agency": "Ministry of Women and Child Development",
       "government_level": "Central",
       "launch_year": 1975,
-      "target_beneficiaries": "Children and mothers"
+      "target_beneficiaries": "Children and mothers",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 53,
@@ -844,12 +1044,16 @@
       "income_limit": "No limit",
       "age_limit": "18–50",
       "benefits": "Life insurance cover of ₹2 lakh",
-      "required_documents": ["Aadhaar Card", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Bank Account"
+      ],
       "application_process": "Enroll through bank",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Bank account holders"
+      "target_beneficiaries": "Bank account holders",
+      "official_link": "https://financialservices.gov.in/insurance-divisions/Government-Sponsored-Socially-Oriented-Insurance-Schemes/Pradhan-Mantri-Jeevan-Jyoti-Bima-Yojana(PMJJBY)"
     },
     {
       "scheme_id": 54,
@@ -860,12 +1064,16 @@
       "income_limit": "No limit",
       "age_limit": "18–70",
       "benefits": "Accident insurance cover of ₹2 lakh",
-      "required_documents": ["Aadhaar Card", "Bank Account"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Bank Account"
+      ],
       "application_process": "Enroll through bank",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Bank account holders"
+      "target_beneficiaries": "Bank account holders",
+      "official_link": "https://financialservices.gov.in/insurance-divisions/Government-Sponsored-Socially-Oriented-Insurance-Schemes/Pradhan-Mantri-Suraksha-Bima-Yojana(PMSBY)"
     },
     {
       "scheme_id": 55,
@@ -876,12 +1084,16 @@
       "income_limit": "No limit",
       "age_limit": "18–65",
       "benefits": "Market-linked pension after retirement",
-      "required_documents": ["Aadhaar Card", "PAN Card"],
+      "required_documents": [
+        "Aadhaar Card",
+        "PAN Card"
+      ],
       "application_process": "Register via NPS portal or banks",
       "implementing_agency": "PFRDA",
       "government_level": "Central",
       "launch_year": 2004,
-      "target_beneficiaries": "Working population"
+      "target_beneficiaries": "Working population",
+      "official_link": "https://www.npscra.nsdl.co.in/"
     },
     {
       "scheme_id": 56,
@@ -892,12 +1104,16 @@
       "income_limit": "BPL households",
       "age_limit": "18–79",
       "benefits": "Monthly pension assistance",
-      "required_documents": ["Disability Certificate", "Aadhaar Card"],
+      "required_documents": [
+        "Disability Certificate",
+        "Aadhaar Card"
+      ],
       "application_process": "Apply via social welfare office",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 1995,
-      "target_beneficiaries": "Persons with disabilities"
+      "target_beneficiaries": "Persons with disabilities",
+      "official_link": "https://nsap.nic.in/disability-pension.html"
     },
     {
       "scheme_id": 57,
@@ -908,12 +1124,16 @@
       "income_limit": "BPL households",
       "age_limit": "40+",
       "benefits": "Monthly pension",
-      "required_documents": ["Death Certificate", "Aadhaar Card"],
+      "required_documents": [
+        "Death Certificate",
+        "Aadhaar Card"
+      ],
       "application_process": "Apply via welfare office",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 1995,
-      "target_beneficiaries": "Widows"
+      "target_beneficiaries": "Widows",
+      "official_link": "https://nsap.nic.in/widow-pension.html"
     },
     {
       "scheme_id": 58,
@@ -924,12 +1144,16 @@
       "income_limit": "BPL households",
       "age_limit": "60+",
       "benefits": "Monthly pension",
-      "required_documents": ["Age Proof", "Aadhaar Card"],
+      "required_documents": [
+        "Age Proof",
+        "Aadhaar Card"
+      ],
       "application_process": "Apply through Panchayat",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 1995,
-      "target_beneficiaries": "Senior citizens"
+      "target_beneficiaries": "Senior citizens",
+      "official_link": "https://nsap.nic.in/old-age-pension.html"
     },
     {
       "scheme_id": 59,
@@ -940,12 +1164,15 @@
       "income_limit": "No limit",
       "age_limit": "0–5",
       "benefits": "Free vaccination",
-      "required_documents": ["MCP Card"],
+      "required_documents": [
+        "MCP Card"
+      ],
       "application_process": "Through government health centers",
       "implementing_agency": "Ministry of Health and Family Welfare",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Children and mothers"
+      "target_beneficiaries": "Children and mothers",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 60,
@@ -956,12 +1183,15 @@
       "income_limit": "No limit",
       "age_limit": "10–19",
       "benefits": "Health awareness and services",
-      "required_documents": ["None"],
+      "required_documents": [
+        "None"
+      ],
       "application_process": "Through schools and health centers",
       "implementing_agency": "Ministry of Health and Family Welfare",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Adolescents"
+      "target_beneficiaries": "Adolescents",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 61,
@@ -972,12 +1202,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Improved rural healthcare services",
-      "required_documents": ["None"],
+      "required_documents": [
+        "None"
+      ],
       "application_process": "Implemented through health departments",
       "implementing_agency": "Ministry of Health and Family Welfare",
       "government_level": "Central",
       "launch_year": 2005,
-      "target_beneficiaries": "Rural population"
+      "target_beneficiaries": "Rural population",
+      "official_link": "https://nhm.gov.in/index1.php?lang=1&level=1&sublinkid=969&lid=49"
     },
     {
       "scheme_id": 62,
@@ -988,12 +1221,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Affordable urban healthcare",
-      "required_documents": ["None"],
+      "required_documents": [
+        "None"
+      ],
       "application_process": "Through urban health centers",
       "implementing_agency": "Ministry of Health and Family Welfare",
       "government_level": "Central",
       "launch_year": 2013,
-      "target_beneficiaries": "Urban poor"
+      "target_beneficiaries": "Urban poor",
+      "official_link": "https://nhm.gov.in/index1.php?lang=1&level=1&sublinkid=970&lid=124"
     },
     {
       "scheme_id": 63,
@@ -1004,12 +1240,15 @@
       "income_limit": "Turnover below ₹100 crore",
       "age_limit": "18+",
       "benefits": "Tax benefits and funding support",
-      "required_documents": ["Startup Recognition Certificate"],
+      "required_documents": [
+        "Startup Recognition Certificate"
+      ],
       "application_process": "Register on Startup India portal",
       "implementing_agency": "Ministry of Commerce and Industry",
       "government_level": "Central",
       "launch_year": 2016,
-      "target_beneficiaries": "Startups"
+      "target_beneficiaries": "Startups",
+      "official_link": "https://www.startupindia.gov.in/"
     },
     {
       "scheme_id": 64,
@@ -1020,12 +1259,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Policy support and investment facilitation",
-      "required_documents": ["Business Registration"],
+      "required_documents": [
+        "Business Registration"
+      ],
       "application_process": "Apply via Invest India",
       "implementing_agency": "Ministry of Commerce and Industry",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Manufacturers"
+      "target_beneficiaries": "Manufacturers",
+      "official_link": "https://www.makeinindia.com/"
     },
     {
       "scheme_id": 65,
@@ -1036,12 +1278,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Integrated infrastructure planning",
-      "required_documents": ["Project Proposal"],
+      "required_documents": [
+        "Project Proposal"
+      ],
       "application_process": "Government-led implementation",
       "implementing_agency": "Ministry of Commerce and Industry",
       "government_level": "Central",
       "launch_year": 2021,
-      "target_beneficiaries": "Infrastructure sector"
+      "target_beneficiaries": "Infrastructure sector",
+      "official_link": "https://gatiShakti.gov.in/"
     },
     {
       "scheme_id": 66,
@@ -1052,12 +1297,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Afforestation and livelihood support",
-      "required_documents": ["None"],
+      "required_documents": [
+        "None"
+      ],
       "application_process": "Implemented via forest departments",
       "implementing_agency": "Ministry of Environment",
       "government_level": "Central",
       "launch_year": 2002,
-      "target_beneficiaries": "Forest communities"
+      "target_beneficiaries": "Forest communities",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 67,
@@ -1068,12 +1316,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Promotion of electric vehicles",
-      "required_documents": ["Vehicle Purchase Proof"],
+      "required_documents": [
+        "Vehicle Purchase Proof"
+      ],
       "application_process": "Apply via dealerships",
       "implementing_agency": "Ministry of Heavy Industries",
       "government_level": "Central",
       "launch_year": 2013,
-      "target_beneficiaries": "EV users"
+      "target_beneficiaries": "EV users",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 69,
@@ -1084,12 +1335,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Sustainable urban planning",
-      "required_documents": ["Project Proposal"],
+      "required_documents": [
+        "Project Proposal"
+      ],
       "application_process": "Government implementation",
       "implementing_agency": "Ministry of Environment",
       "government_level": "Central",
       "launch_year": 2010,
-      "target_beneficiaries": "Urban population"
+      "target_beneficiaries": "Urban population",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 70,
@@ -1100,12 +1354,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Research funding",
-      "required_documents": ["Research Proposal"],
+      "required_documents": [
+        "Research Proposal"
+      ],
       "application_process": "Apply via ministry",
       "implementing_agency": "Ministry of Environment",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Research institutions"
+      "target_beneficiaries": "Research institutions",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 72,
@@ -1116,12 +1373,16 @@
       "income_limit": "Urban poverty line",
       "age_limit": "18+",
       "benefits": "Skill training and self-employment",
-      "required_documents": ["Aadhaar Card", "Residence Proof"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Residence Proof"
+      ],
       "application_process": "Apply through urban local body",
       "implementing_agency": "Ministry of Housing and Urban Affairs",
       "government_level": "Central",
       "launch_year": 2013,
-      "target_beneficiaries": "Urban poor"
+      "target_beneficiaries": "Urban poor",
+      "official_link": "https://mohua.gov.in/"
     },
     {
       "scheme_id": 73,
@@ -1132,12 +1393,15 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Support for bio-energy projects",
-      "required_documents": ["Project Proposal"],
+      "required_documents": [
+        "Project Proposal"
+      ],
       "application_process": "Apply through MNRE",
       "implementing_agency": "Ministry of New and Renewable Energy",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Energy sector"
+      "target_beneficiaries": "Energy sector",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 74,
@@ -1148,12 +1412,15 @@
       "income_limit": "No limit",
       "age_limit": "15–45",
       "benefits": "Skill training and certification",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Register via training centers",
       "implementing_agency": "Ministry of Skill Development",
       "government_level": "Central",
       "launch_year": 2009,
-      "target_beneficiaries": "Youth"
+      "target_beneficiaries": "Youth",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 75,
@@ -1164,12 +1431,15 @@
       "income_limit": "No limit",
       "age_limit": "10+",
       "benefits": "Access to banking and credit",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Through banks and CSPs",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Unbanked population"
+      "target_beneficiaries": "Unbanked population",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 80,
@@ -1180,12 +1450,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Soil testing and fertilizer recommendations",
-      "required_documents": ["Aadhaar Card", "Land Records"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records"
+      ],
       "application_process": "Apply via agriculture department",
       "implementing_agency": "Ministry of Agriculture",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://soilhealth.dac.gov.in/"
     },
     {
       "scheme_id": 81,
@@ -1196,12 +1470,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Short-term credit at subsidized rates",
-      "required_documents": ["Aadhaar Card", "Land Records"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records"
+      ],
       "application_process": "Apply through banks",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 1998,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://pmkisan.gov.in/Kccform.aspx"
     },
     {
       "scheme_id": 82,
@@ -1212,12 +1490,15 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Online trading platform for crops",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Register on e-NAM portal",
       "implementing_agency": "Ministry of Agriculture",
       "government_level": "Central",
       "launch_year": 2016,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://www.enam.gov.in/"
     },
     {
       "scheme_id": 83,
@@ -1228,12 +1509,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Improved irrigation facilities",
-      "required_documents": ["Aadhaar Card", "Land Records"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records"
+      ],
       "application_process": "Apply via agriculture department",
       "implementing_agency": "Ministry of Jal Shakti",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Farmers"
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://pmksy.gov.in/"
     },
     {
       "scheme_id": 84,
@@ -1244,12 +1529,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Support for organic inputs and certification",
-      "required_documents": ["Aadhaar Card", "Land Records"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Land Records"
+      ],
       "application_process": "Apply via state agriculture office",
       "implementing_agency": "Ministry of Agriculture",
       "government_level": "Central",
       "launch_year": 2015,
-      "target_beneficiaries": "Organic farmers"
+      "target_beneficiaries": "Organic farmers",
+      "official_link": "https://pgsindia-ncof.gov.in/PKVY/Index.aspx"
     },
     {
       "scheme_id": 85,
@@ -1260,12 +1549,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Infrastructure and financial support",
-      "required_documents": ["Business Registration"],
+      "required_documents": [
+        "Business Registration"
+      ],
       "application_process": "Apply through ministry portal",
       "implementing_agency": "Ministry of Food Processing Industries",
       "government_level": "Central",
       "launch_year": 2006,
-      "target_beneficiaries": "Food processing sector"
+      "target_beneficiaries": "Food processing sector",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 86,
@@ -1276,12 +1568,16 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Bank loans from ₹10 lakh to ₹1 crore",
-      "required_documents": ["Aadhaar Card", "Business Proposal"],
+      "required_documents": [
+        "Aadhaar Card",
+        "Business Proposal"
+      ],
       "application_process": "Apply via Stand Up India portal",
       "implementing_agency": "Ministry of Finance",
       "government_level": "Central",
       "launch_year": 2016,
-      "target_beneficiaries": "Entrepreneurs"
+      "target_beneficiaries": "Entrepreneurs",
+      "official_link": "https://www.standupmitra.in/"
     },
     {
       "scheme_id": 89,
@@ -1292,12 +1588,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Free electricity connection",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Apply through electricity department",
       "implementing_agency": "Ministry of Power",
       "government_level": "Central",
       "launch_year": 2017,
-      "target_beneficiaries": "Rural and urban poor"
+      "target_beneficiaries": "Rural and urban poor",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 90,
@@ -1308,12 +1607,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Rural electrification",
-      "required_documents": ["Residence Proof"],
+      "required_documents": [
+        "Residence Proof"
+      ],
       "application_process": "Implemented through state utilities",
       "implementing_agency": "Ministry of Power",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Rural population"
+      "target_beneficiaries": "Rural population",
+      "official_link": "https://www.myscheme.gov.in/"
     },
     {
       "scheme_id": 92,
@@ -1324,12 +1626,15 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Free primary healthcare services",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Visit nearest HWC",
       "implementing_agency": "Ministry of Health",
       "government_level": "Central",
       "launch_year": 2018,
-      "target_beneficiaries": "Citizens"
+      "target_beneficiaries": "Citizens",
+      "official_link": "https://pmjay.gov.in/"
     },
     {
       "scheme_id": 94,
@@ -1340,12 +1645,15 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Breed improvement and productivity support",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Apply via animal husbandry dept",
       "implementing_agency": "Ministry of Fisheries, Animal Husbandry",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Dairy farmers"
+      "target_beneficiaries": "Dairy farmers",
+      "official_link": "https://dahd.nic.in/schemes/programmes/rashtriya-gokul-mission"
     },
     {
       "scheme_id": 95,
@@ -1356,12 +1664,15 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Entrepreneurship and productivity support",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Apply via state department",
       "implementing_agency": "Ministry of Fisheries, Animal Husbandry",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Livestock farmers"
+      "target_beneficiaries": "Livestock farmers",
+      "official_link": "https://dahd.nic.in/related-links/national-livestock-mission"
     },
     {
       "scheme_id": 96,
@@ -1372,12 +1683,15 @@
       "income_limit": "No limit",
       "age_limit": "18+",
       "benefits": "Infrastructure and income support",
-      "required_documents": ["Aadhaar Card"],
+      "required_documents": [
+        "Aadhaar Card"
+      ],
       "application_process": "Apply through fisheries department",
       "implementing_agency": "Ministry of Fisheries",
       "government_level": "Central",
       "launch_year": 2020,
-      "target_beneficiaries": "Fishers"
+      "target_beneficiaries": "Fishers",
+      "official_link": "https://pmmsy.dof.gov.in/"
     },
     {
       "scheme_id": 98,
@@ -1388,12 +1702,375 @@
       "income_limit": "No limit",
       "age_limit": "No limit",
       "benefits": "Holistic village development",
-      "required_documents": ["None"],
+      "required_documents": [
+        "None"
+      ],
       "application_process": "MP-led implementation",
       "implementing_agency": "Ministry of Rural Development",
       "government_level": "Central",
       "launch_year": 2014,
-      "target_beneficiaries": "Village population"
+      "target_beneficiaries": "Village population",
+      "official_link": "https://www.myscheme.gov.in/"
+    },
+    {
+      "scheme_id": 88,
+      "scheme_name": "Vidya Lakshmi Education Loan Scheme",
+      "scheme_type": "Education Loan",
+      "category": "Education Finance",
+      "domain": "शिक्षा (Education)",
+      "eligibility": "Students seeking education loans for higher studies",
+      "income_limit": "No limit",
+      "age_limit": "18+",
+      "benefits": "Single window portal for education loan applications to multiple banks",
+      "required_documents": [
+        "Aadhaar Card",
+        "Admission Letter",
+        "Fee Structure",
+        "Income Proof"
+      ],
+      "application_process": "Apply online through Vidya Lakshmi Portal",
+      "implementing_agency": "Ministry of Education and Banks",
+      "government_level": "Central",
+      "launch_year": 2015,
+      "target_beneficiaries": "Students seeking higher education",
+      "official_link": "https://www.vidyalakshmi.co.in/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 89,
+      "scheme_name": "Central Sector Interest Subsidy Scheme",
+      "scheme_type": "Education Loan Subsidy",
+      "category": "Education Finance",
+      "domain": "शिक्षा (Education)",
+      "eligibility": "Students from families with annual income up to ₹4.5 lakh",
+      "income_limit": "₹4.5 lakh per year",
+      "age_limit": "18-35",
+      "benefits": "100% interest subsidy on education loans during moratorium period",
+      "required_documents": [
+        "Income Certificate",
+        "Admission Letter",
+        "Loan Sanction Letter",
+        "Aadhaar Card"
+      ],
+      "application_process": "Apply through bank after loan sanction",
+      "implementing_agency": "Ministry of Education",
+      "government_level": "Central",
+      "launch_year": 2009,
+      "target_beneficiaries": "Economically weaker students",
+      "official_link": "https://www.education.gov.in/hi/central-sector-interest-subsidy",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 90,
+      "scheme_name": "PM Shri Scheme",
+      "scheme_type": "School Development",
+      "category": "Education",
+      "domain": "शिक्षा (Education)",
+      "eligibility": "Schools across India",
+      "income_limit": "No limit",
+      "age_limit": "School students",
+      "benefits": "Exemplar schools with modern infrastructure and quality education",
+      "required_documents": [
+        "School Registration",
+        "Infrastructure Details"
+      ],
+      "application_process": "Schools apply through state education department",
+      "implementing_agency": "Ministry of Education",
+      "government_level": "Central",
+      "launch_year": 2022,
+      "target_beneficiaries": "School students",
+      "official_link": "https://www.education.gov.in/pm-shri-schools",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 91,
+      "scheme_name": "Kisan Vikas Patra",
+      "scheme_type": "Savings",
+      "category": "Investment",
+      "domain": "वित्तीय (Financial)",
+      "eligibility": "All Indian citizens",
+      "income_limit": "No limit",
+      "age_limit": "18+",
+      "benefits": "Investment doubles in 115 months, guaranteed returns",
+      "required_documents": [
+        "Aadhaar Card",
+        "PAN Card",
+        "Address Proof"
+      ],
+      "application_process": "Purchase from post office or banks",
+      "implementing_agency": "Department of Posts",
+      "government_level": "Central",
+      "launch_year": 2014,
+      "target_beneficiaries": "All citizens",
+      "official_link": "https://www.indiapost.gov.in/VAS/Pages/KisanVikasPatra.aspx",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 92,
+      "scheme_name": "National Pension System (NPS)",
+      "scheme_type": "Pension",
+      "category": "Social Security",
+      "domain": "पेंशन (Pension)",
+      "eligibility": "All citizens aged 18-70",
+      "income_limit": "No limit",
+      "age_limit": "18-70",
+      "benefits": "Voluntary retirement savings scheme with tax benefits",
+      "required_documents": [
+        "Aadhaar Card",
+        "PAN Card",
+        "Bank Account"
+      ],
+      "application_process": "Register through NPS portal or banks",
+      "implementing_agency": "PFRDA",
+      "government_level": "Central",
+      "launch_year": 2004,
+      "target_beneficiaries": "All citizens",
+      "official_link": "https://www.npscra.nsdl.co.in/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 93,
+      "scheme_name": "One Nation One Ration Card",
+      "scheme_type": "Food Security",
+      "category": "Public Distribution",
+      "domain": "सामान्य (General)",
+      "eligibility": "Ration card holders",
+      "income_limit": "As per state criteria",
+      "age_limit": "No limit",
+      "benefits": "Access ration from any fair price shop across India",
+      "required_documents": [
+        "Existing Ration Card",
+        "Aadhaar Card"
+      ],
+      "application_process": "Automatic for existing ration card holders",
+      "implementing_agency": "Ministry of Consumer Affairs",
+      "government_level": "Central",
+      "launch_year": 2020,
+      "target_beneficiaries": "Ration card holders",
+      "official_link": "https://epos.nic.in/ONORC/HomePage",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 94,
+      "scheme_name": "PM Formalization of Micro Food Processing Enterprises (PMFME)",
+      "scheme_type": "Business Support",
+      "category": "Food Processing",
+      "domain": "रोजगार (Employment)",
+      "eligibility": "Micro food processing enterprises",
+      "income_limit": "No limit",
+      "age_limit": "18+",
+      "benefits": "Credit-linked subsidy up to ₹10 lakh",
+      "required_documents": [
+        "Business Registration",
+        "Aadhaar Card",
+        "Bank Account",
+        "Project Report"
+      ],
+      "application_process": "Apply through state nodal agency",
+      "implementing_agency": "Ministry of Food Processing Industries",
+      "government_level": "Central",
+      "launch_year": 2020,
+      "target_beneficiaries": "Food processing entrepreneurs",
+      "official_link": "https://www.mofpi.gov.in/pmfme/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 95,
+      "scheme_name": "Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+      "scheme_type": "Fisheries Development",
+      "category": "Fisheries",
+      "domain": "कृषि (Agriculture)",
+      "eligibility": "Fishermen, fish farmers, and fisheries entrepreneurs",
+      "income_limit": "No limit",
+      "age_limit": "18+",
+      "benefits": "Financial assistance for fisheries development and modernization",
+      "required_documents": [
+        "Aadhaar Card",
+        "Fisherman ID",
+        "Bank Account",
+        "Land Documents"
+      ],
+      "application_process": "Apply through Department of Fisheries",
+      "implementing_agency": "Department of Fisheries",
+      "government_level": "Central",
+      "launch_year": 2020,
+      "target_beneficiaries": "Fishermen and fish farmers",
+      "official_link": "https://pmmsy.dof.gov.in/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 96,
+      "scheme_name": "PM Kusum (Solar Pump)",
+      "scheme_type": "Solar Energy",
+      "category": "Agriculture Energy",
+      "domain": "कृषि (Agriculture)",
+      "eligibility": "Farmers for solar pump installation",
+      "income_limit": "No limit",
+      "age_limit": "18+",
+      "benefits": "90% subsidy on solar pump installation",
+      "required_documents": [
+        "Land Documents",
+        "Aadhaar Card",
+        "Bank Account",
+        "Electricity Bill"
+      ],
+      "application_process": "Apply through state nodal agency",
+      "implementing_agency": "Ministry of New and Renewable Energy",
+      "government_level": "Central",
+      "launch_year": 2019,
+      "target_beneficiaries": "Farmers",
+      "official_link": "https://pmkusum.mnre.gov.in/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 97,
+      "scheme_name": "Namo Drone Didi Scheme",
+      "scheme_type": "Women Empowerment",
+      "category": "Agriculture Technology",
+      "domain": "महिला कल्याण (Women Welfare)",
+      "eligibility": "Women SHGs for drone operation in agriculture",
+      "income_limit": "No limit",
+      "age_limit": "18+",
+      "benefits": "Drones provided to women SHGs for agricultural services",
+      "required_documents": [
+        "SHG Certificate",
+        "Aadhaar Card",
+        "Bank Account"
+      ],
+      "application_process": "Apply through SHG federation",
+      "implementing_agency": "Ministry of Agriculture",
+      "government_level": "Central",
+      "launch_year": 2023,
+      "target_beneficiaries": "Women self-help groups",
+      "official_link": "https://agricoop.nic.in/",
+      "location_requirement": "rural",
+      "gender_requirement": "female"
+    },
+    {
+      "scheme_id": 98,
+      "scheme_name": "PM Vishwakarma Scheme",
+      "scheme_type": "Skill Development",
+      "category": "Artisan Support",
+      "domain": "रोजगार (Employment)",
+      "eligibility": "Traditional artisans and craftspeople",
+      "income_limit": "No limit",
+      "age_limit": "18+",
+      "benefits": "Skill training, toolkit incentive, credit support up to ₹3 lakh",
+      "required_documents": [
+        "Aadhaar Card",
+        "Artisan Certificate",
+        "Bank Account"
+      ],
+      "application_process": "Apply online through PM Vishwakarma portal",
+      "implementing_agency": "Ministry of MSME",
+      "government_level": "Central",
+      "launch_year": 2023,
+      "target_beneficiaries": "Artisans and craftspeople",
+      "official_link": "https://pmvishwakarma.gov.in/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 99,
+      "scheme_name": "Lakhpati Didi Scheme",
+      "scheme_type": "Women Empowerment",
+      "category": "Livelihood",
+      "domain": "महिला कल्याण (Women Welfare)",
+      "eligibility": "Women in self-help groups",
+      "income_limit": "No limit",
+      "age_limit": "18+",
+      "benefits": "Skill training and support to earn ₹1 lakh+ annual income",
+      "required_documents": [
+        "SHG Membership",
+        "Aadhaar Card",
+        "Bank Account"
+      ],
+      "application_process": "Through SHG and rural development department",
+      "implementing_agency": "Ministry of Rural Development",
+      "government_level": "Central",
+      "launch_year": 2023,
+      "target_beneficiaries": "Women SHG members",
+      "official_link": "https://nrlm.gov.in/",
+      "location_requirement": "rural",
+      "gender_requirement": "female"
+    },
+    {
+      "scheme_id": 100,
+      "scheme_name": "Ayushman Bharat Health Account (ABHA)",
+      "scheme_type": "Digital Health",
+      "category": "Health ID",
+      "domain": "स्वास्थ्य (Health)",
+      "eligibility": "All Indian citizens",
+      "income_limit": "No limit",
+      "age_limit": "No limit",
+      "benefits": "Unique health ID for digital health records",
+      "required_documents": [
+        "Aadhaar Card",
+        "Mobile Number"
+      ],
+      "application_process": "Register online through ABHA portal",
+      "implementing_agency": "National Health Authority",
+      "government_level": "Central",
+      "launch_year": 2021,
+      "target_beneficiaries": "All citizens",
+      "official_link": "https://pmjay.gov.in/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 101,
+      "scheme_name": "e-Shram Portal",
+      "scheme_type": "Worker Registration",
+      "category": "Labour Welfare",
+      "domain": "रोजगार (Employment)",
+      "eligibility": "Unorganized sector workers",
+      "income_limit": "No limit",
+      "age_limit": "16-59",
+      "benefits": "National database, access to social security schemes",
+      "required_documents": [
+        "Aadhaar Card",
+        "Bank Account",
+        "Mobile Number"
+      ],
+      "application_process": "Register online at e-Shram portal",
+      "implementing_agency": "Ministry of Labour",
+      "government_level": "Central",
+      "launch_year": 2021,
+      "target_beneficiaries": "Unorganized workers",
+      "official_link": "https://eshram.gov.in/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
+    },
+    {
+      "scheme_id": 102,
+      "scheme_name": "PM Gati Shakti",
+      "scheme_type": "Infrastructure",
+      "category": "National Infrastructure",
+      "domain": "सामान्य (General)",
+      "eligibility": "Infrastructure projects",
+      "income_limit": "No limit",
+      "age_limit": "No limit",
+      "benefits": "Integrated infrastructure development",
+      "required_documents": [
+        "Project Details"
+      ],
+      "application_process": "Through concerned ministry",
+      "implementing_agency": "Multiple Ministries",
+      "government_level": "Central",
+      "launch_year": 2021,
+      "target_beneficiaries": "Infrastructure stakeholders",
+      "official_link": "https://gatiShakti.gov.in/",
+      "location_requirement": "both",
+      "gender_requirement": "all"
     }
   ]
 }

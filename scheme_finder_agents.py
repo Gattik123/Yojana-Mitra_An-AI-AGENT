@@ -323,37 +323,110 @@ Be thorough and inclusive - if criteria are borderline, include the scheme with 
         }
     
     def process(self, user_profile: UserProfile) -> Dict[str, Any]:
-        """Match user with eligible schemes - ULTRA STRICT VERSION"""
+        """Match user with eligible schemes - with AI verification for accuracy"""
         
-        # First pass: rule-based filtering with VERY HIGH bar
+        # First pass: rule-based filtering
         eligible_schemes = []
         
         for scheme in self.schemes_data:
             eligibility_check = self._parse_eligibility_criteria(scheme, user_profile)
             
-            # ULTRA STRICT: Only include schemes with confidence >= 60
-            # This excludes all borderline and questionable matches
+            # Include schemes with confidence >= 60
             if eligibility_check['eligible'] and eligibility_check['confidence'] >= 60:
                 eligible_schemes.append({
                     'scheme_id': scheme['scheme_id'],
                     'scheme_name': scheme['scheme_name'],
                     'scheme_type': scheme['scheme_type'],
+                    'category': scheme.get('category', ''),
+                    'domain': scheme.get('domain', 'सामान्य (General)'),
                     'benefits': scheme['benefits'],
                     'confidence': eligibility_check['confidence'],
-                    'notes': eligibility_check['reasons']
+                    'notes': eligibility_check['reasons'],
+                    'eligibility': scheme.get('eligibility', ''),
+                    'target_beneficiaries': scheme.get('target_beneficiaries', '')
                 })
         
         # Sort by confidence (highest first)
         eligible_schemes.sort(key=lambda x: x['confidence'], reverse=True)
         
-        # AI enhancement disabled for ultra-strict mode
-        # We want only rule-based, verified matches
+        # Second pass: AI verification for top candidates (if >10 schemes found)
+        if len(eligible_schemes) > 10:
+            eligible_schemes = self._ai_verify_top_schemes(eligible_schemes[:25], user_profile)
         
         return {
             'total_matched': len(eligible_schemes),
             'matched_schemes': eligible_schemes,
             'user_profile_summary': user_profile.to_dict()
         }
+    
+    def _ai_verify_top_schemes(self, schemes: List[Dict], user_profile: UserProfile) -> List[Dict]:
+        """Use AI to verify and re-rank top scheme matches for better accuracy"""
+        try:
+            # Create concise scheme summaries for AI
+            schemes_summary = []
+            for s in schemes:
+                schemes_summary.append({
+                    'id': s['scheme_id'],
+                    'name': s['scheme_name'],
+                    'type': s['scheme_type'],
+                    'eligibility': s['eligibility'],
+                    'target': s['target_beneficiaries']
+                })
+            
+            prompt = f"""
+User Profile:
+- Age: {user_profile.age}
+- Occupation: {user_profile.occupation}
+- Income: ₹{user_profile.income}
+- Location: {user_profile.location_type}
+- Gender: {user_profile.gender}
+- Family Size: {user_profile.family_size}
+- Education: {user_profile.education_level}
+
+Pre-filtered Schemes:
+{json.dumps(schemes_summary, indent=2, ensure_ascii=False)}
+
+Verify which schemes this user is ACTUALLY eligible for. Consider:
+1. Does occupation truly match scheme target?
+2. Are there hidden eligibility criteria?
+3. Is this a practical, realistic match?
+
+Respond with ONLY a JSON array of scheme IDs that are truly eligible, ordered by best match first.
+Example: [5, 12, 3, 8]
+"""
+            
+            response = self.model.generate_content(prompt)
+            response_text = response.text.strip()
+            
+            # Extract JSON from response
+            import re
+            json_match = re.search(r'\[[\d,\s]+\]', response_text)
+            if json_match:
+                verified_ids = json.loads(json_match.group())
+                
+                # Reorder schemes based on AI verification
+                verified_schemes = []
+                for scheme_id in verified_ids:
+                    scheme = next((s for s in schemes if s['scheme_id'] == scheme_id), None)
+                    if scheme:
+                        # Boost confidence for AI-verified schemes
+                        scheme['confidence'] = min(98, scheme['confidence'] + 5)
+                        if 'AI Verified' not in scheme['notes']:
+                            scheme['notes'].append('✓ AI Verified')
+                        verified_schemes.append(scheme)
+                
+                # Add remaining schemes with slightly lower confidence
+                for scheme in schemes:
+                    if scheme['scheme_id'] not in verified_ids:
+                        scheme['confidence'] = max(55, scheme['confidence'] - 10)
+                        verified_schemes.append(scheme)
+                
+                return verified_schemes
+        except Exception as e:
+            print(f"AI verification failed, using rule-based results: {e}")
+        
+        # Return original if AI fails
+        return schemes
 
 
 class SimplificationAgent(BaseAgent):
@@ -363,40 +436,41 @@ class SimplificationAgent(BaseAgent):
         super().__init__(api_key, AgentType.SIMPLIFIER)
     
     def _create_system_prompt(self) -> str:
-        return """You are an expert at simplifying government scheme information for common citizens.
-Your job is to take complex scheme details and explain them in simple, easy-to-understand language.
+        return """आप सरकारी योजनाओं को आम लोगों के लिए सरल हिंदी में समझाने वाले विशेषज्ञ हैं।
+आपका काम जटिल योजना विवरणों को सरल, समझने में आसान भाषा में समझाना है।
 
-Guidelines:
-1. Use simple Hindi-English words that villagers and common people understand
-2. Avoid jargon and technical terms
-3. Use everyday examples and analogies
-4. Break down complex processes into simple steps
-5. Focus on practical benefits
-6. Use conversational tone
-7. If technical terms are necessary, explain them in brackets
+दिशा-निर्देश:
+1. सरल हिंदी शब्दों का उपयोग करें जो गांव के लोग और आम लोग समझ सकें
+2. कठिन शब्दों और तकनीकी शब्दों से बचें
+3. रोजमर्रा के उदाहरण और तुलना का उपयोग करें
+4. जटिल प्रक्रियाओं को सरल चरणों में तोड़ें
+5. व्यावहारिक लाभों पर ध्यान केंद्रित करें
+6. बातचीत के लहजे का उपयोग करें
+7. यदि तकनीकी शब्द आवश्यक हैं, तो उन्हें ब्रैकेट में समझाएं
 
-Output format:
-- Simple explanation (2-3 sentences)
-- Who can get it (in simple terms)
-- What you will get (clear benefits)
-- How to apply (simple steps)
+आउटपुट प्रारूप:
+- सरल व्याख्या (2-3 वाक्य)
+- किसे मिल सकता है (सरल शब्दों में)
+- आपको क्या मिलेगा (स्पष्ट लाभ)
+- कैसे आवेदन करें (सरल चरण)
+
+सभी जवाब केवल सरल हिंदी में दें। अंग्रेजी का उपयोग न करें।
 """
     
     def process(self, scheme_data: Dict) -> Dict[str, str]:
         """Simplify scheme information"""
         
         prompt = f"""
-Simplify this government scheme information for common citizens:
+इस सरकारी योजना की जानकारी को आम लोगों के लिए सरल हिंदी में समझाएं:
 
-Scheme: {scheme_data['scheme_name']}
-Type: {scheme_data['scheme_type']}
-Eligibility: {scheme_data['eligibility']}
-Benefits: {scheme_data['benefits']}
-Documents Needed: {', '.join(scheme_data['required_documents'])}
-How to Apply: {scheme_data['application_process']}
+योजना: {scheme_data['scheme_name']}
+प्रकार: {scheme_data['scheme_type']}
+पात्रता: {scheme_data['eligibility']}
+लाभ: {scheme_data['benefits']}
+आवश्यक दस्तावेज: {', '.join(scheme_data['required_documents'])}
+आवेदन कैसे करें: {scheme_data['application_process']}
 
-Provide a simplified explanation in the format specified in your instructions.
-Use mix of simple Hindi-English words (Hinglish) where appropriate for better understanding.
+कृपया सरल हिंदी में व्याख्या दें। निर्देशों में बताए गए प्रारूप का पालन करें।
 """
         
         try:
@@ -424,11 +498,11 @@ Use mix of simple Hindi-English words (Hinglish) where appropriate for better un
                     continue
                     
                 lower_line = line.lower()
-                if 'who can get' in lower_line or 'eligibility' in lower_line:
+                if 'who can get' in lower_line or 'eligibility' in lower_line or 'किसे मिल' in lower_line or 'पात्रता' in lower_line:
                     current_section = 'who_can_get'
-                elif 'benefit' in lower_line or 'what you' in lower_line:
+                elif 'benefit' in lower_line or 'what you' in lower_line or 'लाभ' in lower_line or 'क्या मिल' in lower_line:
                     current_section = 'benefits_simple'
-                elif 'how to apply' in lower_line or 'application' in lower_line:
+                elif 'how to apply' in lower_line or 'application' in lower_line or 'आवेदन' in lower_line or 'कैसे' in lower_line:
                     current_section = 'how_to_apply_simple'
                 else:
                     sections[current_section] += line + ' '
@@ -453,21 +527,23 @@ class ApplicationGuideAgent(BaseAgent):
         super().__init__(api_key, AgentType.APPLICATION_GUIDE)
     
     def _create_system_prompt(self) -> str:
-        return """You are an expert guide for government scheme applications.
-Your job is to provide clear, step-by-step instructions for applying to schemes.
+        return """आप सरकारी योजना आवेदन के लिए विशेषज्ञ मार्गदर्शक हैं।
+आपका काम योजनाओं में आवेदन करने के लिए स्पष्ट, चरण-दर-चरण निर्देश प्रदान करना है।
 
-Guidelines:
-1. Break down the process into numbered steps
-2. Mention where to go (online portal, office, bank, etc.)
-3. What documents to prepare beforehand
-4. What to expect at each step
-5. Common mistakes to avoid
-6. Timeline expectations
-7. Helpline numbers if available
-8. Use simple language with Hinglish where helpful
+दिशा-निर्देश:
+1. प्रक्रिया को क्रमांकित चरणों में विभाजित करें
+2. बताएं कि कहां जाना है (ऑनलाइन पोर्टल, कार्यालय, बैंक, आदि)
+3. पहले से कौन से दस्तावेज तैयार करने हैं
+4. प्रत्येक चरण में क्या उम्मीद करें
+5. सामान्य गलतियों से बचने के लिए
+6. समय सीमा की अपेक्षाएं
+7. यदि उपलब्ध हो तो हेल्पलाइन नंबर
+8. सरल हिंदी भाषा का प्रयोग करें
 
-Format:
-Step-by-step guide with clear action items
+प्रारूप:
+स्पष्ट कार्रवाई बिंदुओं के साथ चरण-दर-चरण मार्गदर्शिका
+
+सभी जवाब केवल सरल हिंदी में दें। अंग्रेजी का उपयोग कम से कम करें।
 """
     
     def process(self, scheme_data: Dict, user_profile: Optional[UserProfile] = None) -> Dict[str, Any]:
@@ -475,27 +551,27 @@ Step-by-step guide with clear action items
         
         user_context = ""
         if user_profile:
-            user_context = f"\nUser Profile: Age {user_profile.age}, {user_profile.location_type}, {user_profile.occupation}"
+            user_context = f"\nउपयोगकर्ता प्रोफ़ाइल: उम्र {user_profile.age}, {user_profile.location_type}, {user_profile.occupation}"
         
         prompt = f"""
-Create a detailed step-by-step application guide for this scheme:
+इस योजना के लिए विस्तृत चरण-दर-चरण आवेदन मार्गदर्शिका बनाएं:
 
-Scheme: {scheme_data['scheme_name']}
-How to Apply: {scheme_data['application_process']}
-Required Documents: {', '.join(scheme_data['required_documents'])}
-Implementing Agency: {scheme_data['implementing_agency']}
+योजना: {scheme_data['scheme_name']}
+आवेदन कैसे करें: {scheme_data['application_process']}
+आवश्यक दस्तावेज: {', '.join(scheme_data['required_documents'])}
+कार्यान्वयन एजेंसी: {scheme_data['implementing_agency']}
 {user_context}
 
-Provide:
-1. Pre-application checklist
-2. Detailed step-by-step process
-3. Documents needed (explain what each is)
-4. Where to submit
-5. Timeline
-6. Tips and common mistakes to avoid
-7. What to do if rejected
+कृपया प्रदान करें:
+1. आवेदन से पहले की जांच सूची
+2. विस्तृत चरण-दर-चरण प्रक्रिया
+3. आवश्यक दस्तावेज (प्रत्येक क्या है समझाएं)
+4. कहां जमा करना है
+5. समय सीमा
+6. सुझाव और सामान्य गलतियों से बचने के लिए
+7. अस्वीकार होने पर क्या करें
 
-Use simple language with Hinglish terms where it helps understanding.
+सरल हिंदी भाषा का उपयोग करें।
 """
         
         try:
@@ -528,19 +604,21 @@ class QueryResolverAgent(BaseAgent):
         self.chat = self.model.start_chat(history=[])
     
     def _create_system_prompt(self) -> str:
-        return """You are a helpful assistant who answers questions about Indian government schemes.
+        return """आप भारतीय सरकारी योजनाओं के बारे में सवालों के जवाब देने वाले सहायक हैं।
 
-Guidelines:
-1. Answer in simple, conversational language
-2. Use Hinglish where it helps understanding
-3. Be accurate and factual
-4. If you don't know, say so
-5. Provide specific scheme names when relevant
-6. Explain in a friendly, encouraging manner
-7. Help users understand eligibility
-8. Guide them to next steps
+दिशा-निर्देश:
+1. सरल, बातचीत की भाषा में जवाब दें
+2. सरल हिंदी का उपयोग करें
+3. सटीक और तथ्यात्मक रहें
+4. यदि आप नहीं जानते हैं, तो कहें
+5. प्रासंगिक होने पर विशिष्ट योजना के नाम प्रदान करें
+6. मित्रवत, प्रोत्साहक तरीके से समझाएं
+7. उपयोगकर्ताओं को पात्रता समझने में मदद करें
+8. अगले चरणों के लिए मार्गदर्शन करें
 
-You have access to information about 89+ government schemes.
+आपके पास 89+ सरकारी योजनाओं की जानकारी है।
+
+सभी जवाब सरल हिंदी में दें।
 """
     
     def process(self, query: str, context: Optional[Dict] = None) -> str:
@@ -551,15 +629,15 @@ You have access to information about 89+ government schemes.
         if context:
             if 'matched_schemes' in context:
                 schemes_list = [s['scheme_name'] for s in context['matched_schemes'][:5]]
-                context_text = f"\n\nUser's eligible schemes: {', '.join(schemes_list)}"
+                context_text = f"\n\nउपयोगकर्ता की योग्य योजनाएं: {', '.join(schemes_list)}"
             if 'current_scheme' in context:
-                context_text += f"\n\nCurrently discussing: {context['current_scheme']['scheme_name']}"
+                context_text += f"\n\nवर्तमान में चर्चा: {context['current_scheme']['scheme_name']}"
         
         prompt = f"""
-User Question: {query}
+उपयोगकर्ता का सवाल: {query}
 {context_text}
 
-Provide a helpful, accurate answer in simple language. Use Hinglish where appropriate.
+सरल हिंदी में सहायक, सटीक जवाब दें।
 """
         
         try:
@@ -568,7 +646,7 @@ Provide a helpful, accurate answer in simple language. Use Hinglish where approp
             
         except Exception as e:
             print(f"Query resolution failed: {e}")
-            return f"I'm having trouble answering that right now. Error: {str(e)}"
+            return f"मुझे अभी इसका जवाब देने में परेशानी हो रही है। Error: {str(e)}"
     
     def reset_conversation(self):
         """Reset the conversation history"""

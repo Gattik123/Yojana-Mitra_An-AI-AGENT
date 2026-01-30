@@ -103,7 +103,7 @@ def auto_initialize():
     """Auto-initialize the system"""
     if st.session_state.orchestrator is None:
         # Try environment variable first
-        api_key = "AIzaSyCtk6IQH3Vrh777NVQ9woCppta_KFj4uV4"
+        api_key = "AIzaSyBE9PDY4_9Hepo0kU1rx76MCmk7-7rCZm8"
         
         # If not in env, ask user
         if not api_key:
@@ -292,35 +292,47 @@ def display_matched_schemes():
             f"{confidence_color} **{idx}. {scheme['scheme_name']}** ({scheme['confidence']}% match)",
             expanded=(idx <= 3)
         ):
-            col1, col2 = st.columns([2, 1])
+            st.markdown(f"**Domain:** {scheme.get('domain', 'सामान्य (General)')}")
+            st.markdown(f"**Type:** {scheme['scheme_type']}")
+            st.markdown(f"**Benefits:** {scheme['benefits']}")
             
-            with col1:
-                st.markdown(f"**Type:** {scheme['scheme_type']}")
-                st.markdown(f"**Benefits:** {scheme['benefits']}")
-                if scheme['notes']:
-                    st.info(f"ℹ️ {', '.join(scheme['notes'])}")
+            # Get official link from full scheme data
+            full_scheme = st.session_state.orchestrator.get_scheme_by_id(scheme['scheme_id'])
+            if full_scheme and full_scheme.get('official_link'):
+                st.markdown(f"🔗 **Official Website:** [{full_scheme['official_link']}]({full_scheme['official_link']})")
             
-            with col2:
-                # Simplify button
-                if st.button("📖 Simplify", key=f"simp_{scheme['scheme_id']}", use_container_width=True):
-                    with st.spinner("Simplifying..."):
-                        # Add language preference to the simplification
-                        simplified = st.session_state.orchestrator.get_simplified_scheme(scheme['scheme_id'])
-                        
-                        st.markdown("### 📖 Simple Explanation")
-                        st.write(simplified['full_simplified'])
-                
-                # Application guide button
-                if st.button("📝 How to Apply", key=f"guide_{scheme['scheme_id']}", use_container_width=True):
-                    with st.spinner("Generating guide..."):
-                        guide = st.session_state.orchestrator.get_application_guide(scheme['scheme_id'])
-                        
-                        st.markdown("### 📝 Application Guide")
-                        st.write(guide['guide'])
-                        
-                        st.markdown("**📄 Documents Needed:**")
-                        for doc in guide['documents_needed']:
-                            st.markdown(f"<span class='doc-tag'>{doc}</span>", unsafe_allow_html=True)
+            if scheme['notes']:
+                st.info(f"ℹ️ {', '.join(scheme['notes'])}")
+            
+            # Buttons in a row
+            col_btn1, col_btn2, col_btn3 = st.columns([1, 1, 3])
+            
+            with col_btn1:
+                simplify_clicked = st.button("📖 Simplify", key=f"simp_{scheme['scheme_id']}", use_container_width=True)
+            
+            with col_btn2:
+                guide_clicked = st.button("📝 How to Apply", key=f"guide_{scheme['scheme_id']}", use_container_width=True)
+            
+            # Show content below buttons in full width
+            if simplify_clicked:
+                with st.spinner("सरल भाषा में तैयार किया जा रहा है..."):
+                    simplified = st.session_state.orchestrator.get_simplified_scheme(scheme['scheme_id'])
+                    
+                    st.markdown("---")
+                    st.markdown("### 📖 सरल भाषा में व्याख्या")
+                    st.write(simplified['full_simplified'])
+            
+            if guide_clicked:
+                with st.spinner("आवेदन गाइड तैयार की जा रही है..."):
+                    guide = st.session_state.orchestrator.get_application_guide(scheme['scheme_id'])
+                    
+                    st.markdown("---")
+                    st.markdown("### 📝 आवेदन कैसे करें")
+                    st.write(guide['guide'])
+                    
+                    st.markdown("**📄 आवश्यक दस्तावेज:**")
+                    for doc in guide['documents_needed']:
+                        st.markdown(f"<span class='doc-tag'>{doc}</span>", unsafe_allow_html=True)
 
 
 def chat_interface():
@@ -376,9 +388,12 @@ def search_interface():
                 col1, col2 = st.columns([3, 1])
                 
                 with col1:
+                    st.write(f"**Domain:** {scheme.get('domain', 'सामान्य (General)')}")
                     st.write(f"**Category:** {scheme['category']}")
                     st.write(f"**Benefits:** {scheme['benefits']}")
                     st.write(f"**Eligibility:** {scheme['eligibility']}")
+                    if scheme.get('official_link'):
+                        st.markdown(f"🔗 **Official Website:** [{scheme['official_link']}]({scheme['official_link']})")
                 
                 with col2:
                     st.write(f"**Age:** {scheme['age_limit']}")
