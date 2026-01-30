@@ -1,0 +1,4 @@
+2026-01-30 11:15:44,028 | ERROR | Error loading schemes.csv: [Errno 2] No such file or directory: 'agents/schemes.csv'
+2026-01-30 11:15:45,657 | INFO | UserInteractionAgent initialized | use_llm=False
+2026-01-30 11:15:45,658 | INFO | Processed input: {'Age': '30 years', 'income': '1.5 lakh', 'State': 'Puducherry', 'job': 'Fisherman'} -> {'age': 30, 'income': 150000, 'state': 'Puducherry', 'category': None, 'occupation': 'fisherman', 'missing_fields': ['category']}
+2026-01-30 11:15:45,658 | WARNING | No schemes loaded, returning empty list.

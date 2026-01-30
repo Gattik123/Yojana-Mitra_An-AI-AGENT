@@ -1,0 +1,15 @@
+2026-01-30 11:14:11,516 | INFO | UserInteractionAgent initialized | use_llm=False
+2026-01-30 11:14:11,516 | INFO | Processed input: {'Age': '30 years', 'income': '1.5 lakh', 'State': 'karnataka', 'job': 'Farmer'} -> {'age': 30, 'income': 150000, 'state': 'Karnataka', 'category': None, 'occupation': 'farmer', 'missing_fields': ['category']}
+2026-01-30 11:14:11,517 | INFO | UserInteractionAgent initialized | use_llm=False
+2026-01-30 11:14:11,518 | INFO | Processed input: {'Age': '45', 'income': '\u20b92,50,000', 'State': 'maharashtra', 'category': 'OBC', 'Occupation': 'teacher'} -> {'age': 45, 'income': 250000, 'state': 'Maharashtra', 'category': 'OBC', 'occupation': 'teacher', 'missing_fields': []}
+2026-01-30 11:14:11,518 | INFO | UserInteractionAgent initialized | use_llm=False
+2026-01-30 11:14:11,519 | INFO | Processed input: {'Age': None, 'income': None, 'State': '', 'job': ''} -> {'age': None, 'income': None, 'state': '', 'category': None, 'occupation': None, 'missing_fields': ['age', 'income', 'category', 'occupation']}
+2026-01-30 11:14:11,519 | INFO | UserInteractionAgent initialized | use_llm=False
+2026-01-30 11:14:11,519 | WARNING | raw_input is not dict: Just a string input instead of dict. Converting to dict.
+2026-01-30 11:14:11,520 | INFO | Processed input: {'raw_input': 'Just a string input instead of dict'} -> {'age': None, 'income': None, 'state': None, 'category': None, 'occupation': None, 'missing_fields': ['age', 'income', 'state', 'category', 'occupation']}
+2026-01-30 11:18:46,015 | ERROR | Error loading schemes.csv: [Errno 2] No such file or directory: 'agents/schemes.csv'
+2026-01-30 11:18:48,214 | ERROR | Error loading schemes.csv: [Errno 2] No such file or directory: 'agents/schemes.csv'
+2026-01-30 11:18:48,240 | DEBUG | Using selector: SelectSelector
+2026-01-30 11:20:29,059 | ERROR | Error loading schemes.csv: [Errno 2] No such file or directory: 'agents/schemes.csv'
+2026-01-30 11:20:31,282 | ERROR | Error loading schemes.csv: [Errno 2] No such file or directory: 'agents/schemes.csv'
+2026-01-30 11:20:31,307 | DEBUG | Using selector: SelectSelector

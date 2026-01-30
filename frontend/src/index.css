@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Government-inspired palette: Deep blue, saffron, green */
+    --background: 210 20% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    /* Deep trustworthy blue */
+    --primary: 215 70% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light blue secondary */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 215 70% 30%;
+
+    --muted: 210 20% 94%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Saffron accent */
+    --accent: 28 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success green for eligibility */
+    --success: 145 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning amber */
+    --warning: 45 95% 50%;
+    --warning-foreground: 220 20% 15%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 215 70% 30%;
+
+    --radius: 0.5rem;
+
+    /* Chat bubbles */
+    --chat-user: 215 70% 30%;
+    --chat-user-foreground: 0 0% 100%;
+    --chat-ai: 210 20% 94%;
+    --chat-ai-foreground: 220 20% 15%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 215 70% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 215 70% 50%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 20% 14%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 20% 14%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 215 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 20%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 28 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 60% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 95% 50%;
+    --warning-foreground: 220 20% 15%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 215 70% 55%;
+
+    --chat-user: 215 70% 45%;
+    --chat-user-foreground: 0 0% 100%;
+    --chat-ai: 220 20% 20%;
+    --chat-ai-foreground: 210 20% 98%;
+
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 215 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 215 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
