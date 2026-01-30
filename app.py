@@ -103,7 +103,7 @@ def auto_initialize():
     """Auto-initialize the system"""
     if st.session_state.orchestrator is None:
         # Try environment variable first
-        api_key = "AIzaSyBE9PDY4_9Hepo0kU1rx76MCmk7-7rCZm8"
+        api_key = "AIzaSyCFncc5dFULkl3wQ1z53bCtNaFViHxVMeY"
         
         # If not in env, ask user
         if not api_key:
@@ -163,13 +163,13 @@ def create_user_profile_form():
         with col2:
             occupation = st.selectbox(
                 "Occupation (पेशा)",
-                ["farmer", "student", "business owner", "daily wage worker", 
+                ["farmer", "student", "business owner","entrepreneur", "daily wage worker", 
                  "salaried employee", "unemployed", "retired", "other"],
                 key="occupation_input"
             )
             education = st.selectbox(
                 "Education (शिक्षा)",
-                ["Below 10th", "10th Pass", "12th Pass", "Graduate", "Post Graduate", "Other"],
+                ["Below 10th", "10th Pass", "12th Pass", "Graduate", "Post Graduate", "Phd"],
                 key="education_input"
             )
             has_disability = st.checkbox("Have Disability (विकलांगता)", key="disability_input")
