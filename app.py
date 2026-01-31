@@ -14,7 +14,7 @@ from scheme_finder_agents import (
 
 # Page configuration
 st.set_page_config(
-    page_title="Yojna Mitra",
+    page_title="Yojana Mitra",
     page_icon="🏛️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -103,7 +103,7 @@ def auto_initialize():
     """Auto-initialize the system"""
     if st.session_state.orchestrator is None:
         # Try environment variable first
-        api_key = "AIzaSyCFncc5dFULkl3wQ1z53bCtNaFViHxVMeY"
+        api_key = "AIzaSyArw_kg10M8dCRHpUh8vcEiIAVwzz-L14Q"
         
         # If not in env, ask user
         if not api_key:
@@ -406,7 +406,7 @@ def main():
     
     # Header
     st.markdown(
-        '<div class="main-header">🏛️ Yojna Mitra<br/>योजना मित्र<br/><small>Your AI Guide to Government Schemes</small></div>', 
+        '<div class="main-header">🏛️ Yojana Mitra<br/>योजना मित्र<br/><small>Your AI Guide to Government Schemes</small></div>', 
         unsafe_allow_html=True
     )
     
