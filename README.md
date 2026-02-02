@@ -77,7 +77,6 @@ Feel free to fork the repo and raise a pull request.
 ## 📜 License
 
 This project is for educational and prototype purposes.  
-License details can be added as required.
 
 ---
 
