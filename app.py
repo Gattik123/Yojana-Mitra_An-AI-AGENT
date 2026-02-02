@@ -103,7 +103,7 @@ def auto_initialize():
     """Auto-initialize the system"""
     if st.session_state.orchestrator is None:
         # Try environment variable first
-        api_key = "AIzaSyArw_kg10M8dCRHpUh8vcEiIAVwzz-L14Q"
+        api_key = ""
         
         # If not in env, ask user
         if not api_key:
